@@ -1,0 +1,41 @@
+@import "../../../Variables";
+
+.profile_info {
+    .personal_image {
+        width: 100%;
+        height: 10vw;
+        background-image: url("https://fsb.zobj.net/crop.php?r=Zo1nX8wCAvBYMOsBWQ6TgrpRrXBDI-BYPlietTdHvJ_Ja8xOX7F1nDdrcvk_6MNjFy3BV-VVbvYXynEEVBvfIHJiAo1Fh1g-XUnq8KFLotW4UtFnpqGSn43DFftMlSgoR_PhpTK1N5BsqhJv");
+        background-position: 0 -400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .user_block {
+        color: $second-color;
+
+        .avatar {
+            width: 16rem;
+            height: 16rem;
+
+            border: .4rem solid black;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .description {
+            .username {
+                font-weight: bolder;
+                font-size: 3rem;
+            }
+
+            .user_description {
+                color: $second-color-darker;
+                font-size: 2rem;
+            }
+        }
+    }
+}

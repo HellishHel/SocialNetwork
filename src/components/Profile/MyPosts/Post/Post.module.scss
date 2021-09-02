@@ -1,0 +1,19 @@
+.Post {
+    background-color: #61dafb;
+    color: #000;
+
+    padding: 1rem;
+
+    display: flex;
+
+    .avatar {
+        width: 10%;
+        border: 1px solid red;
+        border-radius: 50%;
+    }
+
+    .message {
+        margin: 0 1rem;
+        width: 80%;
+    }
+}

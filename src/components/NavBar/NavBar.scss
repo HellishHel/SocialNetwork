@@ -1,0 +1,31 @@
+@import "../../Variables";
+
+.navBar {
+  grid-area: nav;
+  background-color: transparent;
+
+  font-size: 1.1rem;
+
+  .navLink {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 2rem;
+
+    padding: 1rem 0;
+    margin-bottom: .5rem;
+
+    color: $second-color;
+    border: .1rem solid $accent-color;
+
+    border-radius: 3rem;
+
+    transition: all ease-in-out $main-transition;
+
+    &:hover {
+      color: $base-color;
+      background-color: $accent-color;
+    }
+  }
+}

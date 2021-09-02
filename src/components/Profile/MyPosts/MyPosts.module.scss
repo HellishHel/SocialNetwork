@@ -1,0 +1,12 @@
+@import "../../../Variables";
+
+.MyPosts {
+    background-color: transparent;
+    color: #61dafb;
+    display: flex;
+    flex-direction: column;
+
+    .CreateNewPost, .PrevPosts {
+        height: fit-content;
+    }
+}
