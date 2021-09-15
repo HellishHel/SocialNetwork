@@ -2,11 +2,33 @@
 
 .MyPosts {
     background-color: transparent;
-    color: #61dafb;
+    color: $second-color;
     display: flex;
     flex-direction: column;
 
+    width: 65%;
+
+    border: .2rem solid $second-color;
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+    padding: 2rem;
+
     .CreateNewPost, .PrevPosts {
         height: fit-content;
+    }
+
+    .CreateNewPost {
+        textarea {
+            width: 100%;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            display: block;
+        }
     }
 }

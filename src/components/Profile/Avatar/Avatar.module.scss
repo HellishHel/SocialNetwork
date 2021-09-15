@@ -1,0 +1,14 @@
+@import "../../../Variables";
+
+.avatar {
+    width: 16rem;
+    height: 16rem;
+
+    border: .4rem solid black;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}

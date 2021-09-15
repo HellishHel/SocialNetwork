@@ -1,12 +1,12 @@
 import React from "react";
 import post from './Post.module.scss';
+import Avatar from "../../Avatar/Avatar";
+import s from "../../ProfileInfo/ProfileInfo.module.scss";
 
 const Post = (props) => {
     return (
         <div className={post.Post}>
-            <div className={post.avatar}>
-                <img src="" alt=""/>
-            </div>
+            <Avatar className={post.avatar} />
             <div className={post.message}>
                 {props.message}
             </div>

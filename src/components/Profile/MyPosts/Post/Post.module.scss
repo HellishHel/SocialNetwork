@@ -1,15 +1,20 @@
+@import "../../../../Variables";
+
 .Post {
-    background-color: #61dafb;
-    color: #000;
-
+    color: $second-color;
+    border-bottom: .2rem solid $accent-color;
     padding: 1rem;
-
     display: flex;
 
     .avatar {
-        width: 10%;
-        border: 1px solid red;
+        width: 3.5rem;
+        height: 3.5rem;
+        border: .3rem solid $next-color;
         border-radius: 50%;
+
+        img {
+            width: 100%;
+        }
     }
 
     .message {

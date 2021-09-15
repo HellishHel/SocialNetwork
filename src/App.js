@@ -11,16 +11,20 @@ import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 
 import {BrowserRouter, Route} from "react-router-dom";
+import {addPost, updateNewPostText} from "./redux/state";
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
                 <Header />
                 <NavBar />
                 <div className="main-content">
-                    <Route path={"/profile"} component={Profile} />
-                    <Route path={"/dialogs"} component={Dialogs} />
+                    <Route path={"/profile"} render={ () => <Profile
+                        page={props.state.profilePage}
+                        addPost={props.addPost}
+                        updateNewPostText={props.updateNewPostText}/> } />
+                    <Route path={"/dialogs"} render={ () => <Dialogs page={props.state.dialogsPage} /> } />
                     <Route path={"/news"} component={News} />
                     <Route path={"/music"} component={Music} />
                     <Route path={"/settings"} component={Settings} />
